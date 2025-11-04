@@ -7,13 +7,11 @@ public class Main {
     public static void main(String[] args) {
         Turma a = new Turma();
 
-        a.professor = new Professor();
-        a.professor.nome = "Gustavo";
+        a.professor = new Professor(1, "Gustavo", "N/A");
         
         a.alunos = new ArrayList<>();
-        a.alunos.add(new Aluno());
-        a.alunos.get(0).nome="Aluno 001";
+        a.alunos.add(new Aluno(1, "Aluno 01", "123.456.789-01"));
 
-        System.err.println(a.alunos.get(0).nome);
+        a.professor.printInfo();
     }
 }

@@ -5,7 +5,13 @@ public class Professor{
     String formacao;
     int cadastro;
 
-    void info(){
+    Professor(int cadastro, String nome, String formacao){
+        this.cadastro = cadastro;
+        this.nome = nome;
+        this.formacao = formacao;
+    }
+
+    void printInfo(){
         System.out.println("ID: " + cadastro);
         System.out.println("Nome: " + nome);
         System.out.println("Formacao: " + formacao);
